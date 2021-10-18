@@ -1,0 +1,40 @@
+.table-container {
+  display: table;
+}
+
+.table-item {
+  background: #16a548;
+  color: #fff;
+  display: table-cell;
+  padding: 10px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.table-item.first {
+  background: #437153;
+  font-size: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.table-item.last {
+  border-left: 1px solid #5fc583;
+}
+
+div.pic-placeholder{
+  width: 161px;
+  height: 70px;
+  margin: 10px;
+  border:1px solid black;
+  display: table-cell;
+}
+
+div.pic-placeholder img{
+  display:block;
+}
+
+.table-item table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}

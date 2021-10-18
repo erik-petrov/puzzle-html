@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="puzzle.css">
+    
+</head>
+<body>
+    <header><!--шапка-->
+        <h1>Puzzle</h1>
+    </header>
+    <div id="menu"></div>
+    <script src="../js/menu.js"></script>
+    <script src="drag.js"></script>
+    <div class="table-container">
+        <div class="table-item first" ondrop="drop(event)" ondragover="allowDrop(event)"  id="container">
+            <img src="img/pieces/image_part_010.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img10">
+            <img src="img/pieces/image_part_002.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img2">
+            <img src="img/pieces/image_part_012.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img12">
+            <img src="img/pieces/image_part_001.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img1">
+            <img src="img/pieces/image_part_011.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img11">
+            <img src="img/pieces/image_part_003.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img3">
+            <img src="img/pieces/image_part_007.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img7">
+            <img src="img/pieces/image_part_009.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img9">
+            <img src="img/pieces/image_part_008.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img8">
+            <img src="img/pieces/image_part_005.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img5">
+            <img src="img/pieces/image_part_004.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img4">
+            <img src="img/pieces/image_part_006.png" alt="piece" draggable="true" ondragstart="drag(event)" id="img6">
+        </div>
+        <div class="table-item">
+            <table cellspacing="0">
+                <tr>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h1"></div></th>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h2"></div></th>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h3"></div></th>
+                </tr>
+                <tr>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h4"></div></th>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h5"></div></th>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h6"></div></th>
+                </tr>
+                <tr>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h7"></div></th>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h8"></div></th>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h9"></div></th>
+                </tr>
+                <tr>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h10"></div></th>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h11"></div></th>
+                    <th><div ondrop="drop(event)" ondragover="allowDrop(event)" class="pic-placeholder" id="h12"></div></th>
+                </tr>
+            </table>
+        </div>
+        <div class="table-item last"><img src="img/resized.png" alt="the puzzle itself"></div>
+  </div>
+    
+    <footer><!--подвал-->
+        &copy; Erik Petrov 2021
+        <br>
+        <!--html5 validator-->
+        <a href="https://validator.w3.org/check?uri=referer"><img alt="W3C HTML5 certified" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" width="88" height="31">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+        </a>
+    </footer>
+</body>
+</html>
